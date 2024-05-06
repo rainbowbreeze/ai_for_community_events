@@ -175,7 +175,7 @@ Steps
 ## Event wrap-up
 
 ### Summarize the content of the session
-Once you've uploaded the event video on YouTube, [Google Gemini YouTube extension](https://support.google.com/gemini/answer/13695044) can help you quickly summarize, analyze and ask questions about the video.
+If there is a **YouTube video of the session** available, [Google Gemini YouTube extension](https://support.google.com/gemini/answer/13695044) can help quickly summarize, analyze and ask questions about the video.
 
 Open [Google Gemini app](https://gemini.google.com/) and try the following prompt:
 ```
@@ -189,11 +189,13 @@ Please summarize the content of the video at https://www.youtube.com/watch?v=9Yo
 
 Gemini can summarise YouTube videos with captions available (both manually or automatically added). Also, not all languages are supported.  
 
-If only audio is available, it's possible to use [Vertex AI Studio Multimodal](https://cloud.google.com/vertex-ai/generative-ai/docs/multimodal/overview), select the "Gemini 1.5 Pro" model, upload the audio file and prompt:
+If **only audio is available**, it's possible to use [Vertex AI Studio Multimodal](https://cloud.google.com/vertex-ai/generative-ai/docs/multimodal/overview), select the "Gemini 1.5 Pro" model, upload the audio file and prompt:
 ```
-Summarize the audio in 4 bullet points
+Summarize in 4 bullet points
 ```
 With 1M context window (and counting), up to 11 hours of audio can be summarized.
+
+Similar approach if only **slides of the sessions** are available. Using Gemini 1.5 Pro model in Vertex AI Studio Multimodal it would be possible to summarize the PDF document of the session.
 
 <br/>
 
