@@ -42,11 +42,12 @@ Prompt engineering is an art. Practive it without fear of making mistakes!
 1. Consider that open-ended question-answering prompts tend to work better than those that restrict model generation. In [this paper](https://openreview.net/forum?id=bhUPJnS2g0X), the researchers found the prompt Who went to the park? outperformed John went to the park. True or False?.
 
 ### General considerations
-- It's common for models to hallucinate citations and source links. Expect to verify whether the output is factually accurate.
+- For the most part, Gemini and LLMs may be accurate, but they are prone to errors, so you might want to take the information with a pinch of salt.
 - Human review is a large part of the LLM improvement process. Do not enter sensitive or personal information.
 - And perhaps most important: Be creative! LLMs and prompt engineering are still in their infancy, and evolving every day. Who knows, you might even discover the newest emergent ability.
 
 Suggestions on prompting? https://ai.google.dev/examples
+
 
 <br/>
 
@@ -67,13 +68,20 @@ Write an engaging blog post based on these pictures. It should talk about the im
 
 Try the output differences using "Gemini Experimental" vs "Gemini-1.0-pro-vision.001".  
 
+
+<br/>
+
 ## Planning your event
 TODO
 
 
+<br/>
+
 ## Speaker selection
 https://github.com/VinciGit00/Scrapegraph-ai
 
+
+<br/>
 
 ## Preparing the event
 
@@ -129,6 +137,19 @@ Steps
 ### TODO - Generate voice for podcasts and other media
 TODO
 
+
+<br/>
+
+## At the event
+
+### TODO - Ask questions to the speaker
+- Prompt Gemini
+  - Instead of..."Marketing talking points.", try this..."Give me 12 thoughtful questions to ask a Chief Marketing Officer on their strategy for 2024."
+  - As usual, If you want Gemini to perform several related tasks, break them apart into separate prompts. This helps the AI understand the task and provide useful responses.
+
+
+<br/>
+
 ## Reporting
 ### Count your attendees
 
@@ -146,13 +167,29 @@ Steps
 - Enjoy an automatic count of the number of attendees
 
 
-## At the event
+<br/>
 
-### TODO - Ask questions to the speaker
-- Prompt Gemini
-  - Instead of..."Marketing talking points.", try this..."Give me 12 thoughtful questions to ask a Chief Marketing Officer on their strategy for 2024."
-  - As usual, If you want Gemini to perform several related tasks, break them apart into separate prompts. This helps the AI understand the task and provide useful responses.
+## Event wrap-up
 
+
+### TODO - Write a thank you email for your community
+
+
+### Summarize the content of the session
+Once you've uploaded the event video on YouTube
+
+
+Tools
+- Gemini
+
+Prompts to try:
+- ```Please summarize the content of the video at https://www.youtube.com/watch?v=9YowQrFxEWg using 6 bullet points```
+
+Things to know:
+- Google says Gemini cannot summarise all videos available on YouTube as the feature requires captions. Also, not all languages are supported, so you may get a different answer depending on the language you are typing in.  
+
+
+<br/>
 
 ## Attendees Analysis
 
@@ -166,8 +203,7 @@ Steps
   - One challenge I came across though was that sometimes Gemini would hallucinate and I had to try different prompts and ways to verify if how it categorises the responses is legit. Asking to illustrate data categorisation with quotes from respondents proved to work the best. 
 
 
-
-
+<br/>
 
 ## Ideas to explore
 - https://github.com/trending
