@@ -154,12 +154,14 @@ Give me 5 thoughtful questions to ask to the presenter of the talk in the PDF fi
 Sometimes there are gadgets and swags to distribute to event attendees. Instead of randomly assigning them with a raffle, why not rewarding who really listened to the content presented? Assuming there is a PDF of the session, there is an easy way to generate questions and answers.  
 Use [Vertex AI Studio Multimodal](https://cloud.google.com/vertex-ai/generative-ai/docs/multimodal/overview), select the "_Gemini 1.5 Pro" model_, upload the PDF file and prompt:
 ```
-I want to organize a quiz based on the PDF file. Give me 6 questions with multiple choices, and their answers
+I want to organize a quiz based on the PDF file.
+Give me 6 questions with multiple choices, and their answers
 ```
 
 In case the content is suitable for a more "interactive" approach, the following prompt can be very inspirational:
 ```
-Using the attached file, create 7 riddles, in rhymes, and their answers. Each riddle starts with a statement, and finishes with a question
+Using the attached file, create 7 riddles, in rhymes, and their answers.
+Each riddle starts with a statement, and finishes with a question
 ```
 
 
