@@ -148,6 +148,9 @@ TODO
   - As usual, If you want Gemini to perform several related tasks, break them apart into separate prompts. This helps the AI understand the task and provide useful responses.
 
 
+### TODO - Organize a raffle with the participants
+
+
 <br/>
 
 ## Reporting
@@ -171,22 +174,43 @@ Steps
 
 ## Event wrap-up
 
-
-### TODO - Write a thank you email for your community
-
-
 ### Summarize the content of the session
-Once you've uploaded the event video on YouTube
+Once you've uploaded the event video on YouTube, [Google Gemini YouTube extension](https://support.google.com/gemini/answer/13695044) can help you quickly summarize, analyze and ask questions about the video.
 
+Open [Google Gemini app](https://gemini.google.com/) and try the following prompt:
+```
+Please summarize the content of the video at https://www.youtube.com/watch?v=9YowQrFxEWg using 6 bullet points
+```
 
-Tools
-- Gemini
+Add some fun?  
+```
+Please summarize the content of the video at https://www.youtube.com/watch?v=9YowQrFxEWg with 6 bullet points, in a funny way, using rhymes
+```
 
-Prompts to try:
-- ```Please summarize the content of the video at https://www.youtube.com/watch?v=9YowQrFxEWg using 6 bullet points```
+Gemini can summarise YouTube videos with captions available (both manually or automatically added). Also, not all languages are supported.  
 
-Things to know:
-- Google says Gemini cannot summarise all videos available on YouTube as the feature requires captions. Also, not all languages are supported, so you may get a different answer depending on the language you are typing in.  
+If only audio is available, it's possible to use [Vertex AI Studio Multimodal](https://cloud.google.com/vertex-ai/generative-ai/docs/multimodal/overview), select the "Gemini 1.5 Pro" model, upload the audio file and prompt:
+```
+Summarize the audio in 4 bullet points
+```
+With 1M context window (and counting), up to 11 hours of audio can be summarized.
+
+<br/>
+
+### Prepare the wrap-up email
+
+Open [Google Gemini app](https://gemini.google.com/) and try the following prompt, using the bullet points generated in the previous step:
+```
+The following bullet points were taken from a session presented at an event. Using them, prepare a wrap-up email to send to all the event attendees. Please also add a feedback request and ask them to register to the community to stay updated on upcoming events.
+
+* Importance of MFA: Multi-factor authentication (MFA) is crucial for securing your Google accounts and preventing unauthorized access. It stops nearly all common account attacks.
+
+* Setting up Google 2SV: Visit myaccount.google.com to enable and configure 2-Step Verification (2SV), Google's MFA solution.
+
+* Recommended Factors: For optimal security, set up these four factors in order of priority: Security Key, Google Authenticator App, Device Push, and Backup Codes.
+
+* Factor Comparison: The video discusses the various MFA factors, including their security levels and potential drawbacks. Security keys are the most secure, while text messages are less secure but still significantly better than no MFA.
+```
 
 
 <br/>
