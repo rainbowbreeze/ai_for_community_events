@@ -143,33 +143,24 @@ TODO
 ## At the event
 
 ### Generate question for the Q&A session with the speaker
-It may happen that no one wants to break the ice during a Q&A session. If the speaker provides a presentation in advance, it's possible to use [Vertex AI Studio Multimodal](https://cloud.google.com/vertex-ai/generative-ai/docs/multimodal/overview), select the "Gemini 1.5 Pro" model, upload the PDF file and prompt:
+It may happen that no one wants to break the ice during a Q&A session. If the speaker provides a presentation in advance, it's possible to use [Vertex AI Studio Multimodal](https://cloud.google.com/vertex-ai/generative-ai/docs/multimodal/overview), select the "_Gemini 1.5 Pro" model_, upload the PDF file and prompt:
 ```
 Give me 5 thoughtful questions to ask to the presenter of the talk in the PDF file
 ```
 
-
-### TODO - Organize a raffle with the participants
-
-
-
 <br/>
 
-## Reporting
-### Count your attendees
+### Organize quizzes for the attendees
+Sometimes there are gadgets and swags to distribute to event attendees. Instead of randomly assigning them with a raffle, why not rewarding who really listened to the content presented? Assuming there is a PDF of the session, there is an easy way to generate questions and answers.  
+Use [Vertex AI Studio Multimodal](https://cloud.google.com/vertex-ai/generative-ai/docs/multimodal/overview), select the "_Gemini 1.5 Pro" model_, upload the PDF file and prompt:
+```
+I want to organize a quiz based on the PDF file. Give me 6 questions with multiple choices, and their answers
+```
 
-Resources
-- https://cloud.google.com/vertex-ai/generative-ai/docs/start/quickstarts/quickstart-multimodal?hl=en
-
-Steps
-- Take a photo of the event attendees
-- In the Google Cloud console, go to the Vertex AI Studio page
-- Click Multimodal
-- Select model: gemini-1.0-pro-vision-001 ([more on models](https://cloud.google.com/vertex-ai/generative-ai/docs/learn/models?hl=en))
-- Upload the picture of the attendees
-- Prompt: "How many people there are in the picture?"
-- Submit the prompt by clicking Submit.
-- Enjoy an automatic count of the number of attendees
+In case the content is suitable for a more "interactive" approach, the following prompt can be very inspirational:
+```
+Using the attached file, create 7 riddles, in rhymes, and their answers. Each riddle starts with a statement, and finishes with a question
+```
 
 
 <br/>
@@ -177,25 +168,27 @@ Steps
 ## Event wrap-up
 
 ### Summarize the content of the session
-If there is a **YouTube video of the session** available, [Google Gemini YouTube extension](https://support.google.com/gemini/answer/13695044) can help quickly summarize, analyze and ask questions about the video.
+If there is a **YouTube video of the session** available, [Google Gemini YouTube extension](https://support.google.com/gemini/answer/13695044) can help quickly summarize, analyze and ask questions about the video. Given video captions are available.
 
 Open [Google Gemini app](https://gemini.google.com/) and try the following prompt:
 ```
 Please summarize the content of the video at https://www.youtube.com/watch?v=9YowQrFxEWg using 6 bullet points
 ```
 
-Add some fun?  
+Too long? 
 ```
-Please summarize the content of the video at https://www.youtube.com/watch?v=9YowQrFxEWg with 6 bullet points, in a funny way, using rhymes
+Make the previous answer shorter
 ```
 
-Gemini can summarise YouTube videos with captions available (both manually or automatically added). Also, not all languages are supported.  
+The prompt works also with published, but unlisted, YouTube videos. 
+<br/>
 
-If **only audio is available**, it's possible to use [Vertex AI Studio Multimodal](https://cloud.google.com/vertex-ai/generative-ai/docs/multimodal/overview), select the "Gemini 1.5 Pro" model, upload the audio file and prompt:
+If **only audio is available**, it's possible to use [Vertex AI Studio Multimodal](https://cloud.google.com/vertex-ai/generative-ai/docs/multimodal/overview), select the "_Gemini 1.5 Pro" model_, upload the audio file and prompt:
 ```
 Summarize in 4 bullet points
 ```
 With 1M context window (and counting), up to 11 hours of audio can be summarized.
+<br/>
 
 Similar approach if only **slides of the sessions** are available. Using Gemini 1.5 Pro model in Vertex AI Studio Multimodal it would be possible to summarize the PDF document of the session.
 
@@ -219,10 +212,26 @@ The following bullet points were taken from a session presented at an event. Usi
 
 <br/>
 
-## Attendees Analysis
+## Reporting and Analysis
+
+### Count your attendees
 
 Resources
-- 
+- https://cloud.google.com/vertex-ai/generative-ai/docs/start/quickstarts/quickstart-multimodal?hl=en
+
+Steps
+- Take a photo of the event attendees
+- In the Google Cloud console, go to the Vertex AI Studio page
+- Click Multimodal
+- Select model: gemini-1.0-pro-vision-001 ([more on models](https://cloud.google.com/vertex-ai/generative-ai/docs/learn/models?hl=en))
+- Upload the picture of the attendees
+- Prompt: "How many people there are in the picture?"
+- Submit the prompt by clicking Submit.
+- Enjoy an automatic count of the number of attendees
+
+<br/>
+
+### Attendees Analysis
 
 Steps
 - Open Gemini
