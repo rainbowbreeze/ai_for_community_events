@@ -143,7 +143,8 @@ TODO
 ## At the event
 
 ### Generate question for the Q&A session with the speaker
-It may happen that no one wants to break the ice during a Q&A session. If the speaker provides a presentation in advance, it's possible to use [Vertex AI Studio Multimodal](https://cloud.google.com/vertex-ai/generative-ai/docs/multimodal/overview), select the "_Gemini 1.5 Pro"_ model, upload the PDF file and prompt:
+It may happen that no one wants to break the ice during a Q&A session making the first question. Hence, having a list of few ready-made ones to fill that awkward silence can be helpful.  
+If the speaker provides a presentation in advance, it's possible to get them using [Vertex AI Studio Multimodal](https://cloud.google.com/vertex-ai/generative-ai/docs/multimodal/overview), select the "_Gemini 1.5 Pro"_ model, upload the PDF file and prompt:
 ```
 Give me 5 thoughtful questions to ask to the presenter of the talk in the PDF file
 ```
