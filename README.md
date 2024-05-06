@@ -142,13 +142,15 @@ TODO
 
 ## At the event
 
-### TODO - Ask questions to the speaker
-- Prompt Gemini
-  - Instead of..."Marketing talking points.", try this..."Give me 12 thoughtful questions to ask a Chief Marketing Officer on their strategy for 2024."
-  - As usual, If you want Gemini to perform several related tasks, break them apart into separate prompts. This helps the AI understand the task and provide useful responses.
+### Generate question for the Q&A session with the speaker
+It may happen that no one wants to break the ice during a Q&A session. If the speaker provides a presentation in advance, it's possible to use [Vertex AI Studio Multimodal](https://cloud.google.com/vertex-ai/generative-ai/docs/multimodal/overview), select the "Gemini 1.5 Pro" model, upload the PDF file and prompt:
+```
+Give me 5 thoughtful questions to ask to the presenter of the talk in the PDF file
+```
 
 
 ### TODO - Organize a raffle with the participants
+
 
 
 <br/>
@@ -231,6 +233,16 @@ Steps
 
 <br/>
 
+## Final consideration
+- As usual, If you want Gemini to perform several related tasks, break them apart into separate prompts. This helps the AI understand the task and provide useful responses.
+- Worried about the price for using Vertex AI?
+  - [Details on the pricing model](https://cloud.google.com/vertex-ai/generative-ai/pricing)
+  - The audio example will cost $0.06:  _$0.00265 / second * 4.5 mins * 60 seconds_
+
+
+<br/>
+<br/>
+
 ## Ideas to explore
 - https://github.com/trending
 - https://dev.events/
@@ -258,3 +270,4 @@ At the event
 - record the video and parse it
 - Q&A the video with Pro windows
 - blogpost about the topic
+
