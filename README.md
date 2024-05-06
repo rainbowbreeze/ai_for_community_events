@@ -143,7 +143,7 @@ TODO
 ## At the event
 
 ### Generate question for the Q&A session with the speaker
-It may happen that no one wants to break the ice during a Q&A session. If the speaker provides a presentation in advance, it's possible to use [Vertex AI Studio Multimodal](https://cloud.google.com/vertex-ai/generative-ai/docs/multimodal/overview), select the "_Gemini 1.5 Pro" model_, upload the PDF file and prompt:
+It may happen that no one wants to break the ice during a Q&A session. If the speaker provides a presentation in advance, it's possible to use [Vertex AI Studio Multimodal](https://cloud.google.com/vertex-ai/generative-ai/docs/multimodal/overview), select the "_Gemini 1.5 Pro"_ model, upload the PDF file and prompt:
 ```
 Give me 5 thoughtful questions to ask to the presenter of the talk in the PDF file
 ```
@@ -152,7 +152,7 @@ Give me 5 thoughtful questions to ask to the presenter of the talk in the PDF fi
 
 ### Organize quizzes for the attendees
 Sometimes there are gadgets and swags to distribute to event attendees. Instead of randomly assigning them with a raffle, why not rewarding who really listened to the content presented? Assuming there is a PDF of the session, there is an easy way to generate questions and answers.  
-Use [Vertex AI Studio Multimodal](https://cloud.google.com/vertex-ai/generative-ai/docs/multimodal/overview), select the "_Gemini 1.5 Pro" model_, upload the PDF file and prompt:
+Use [Vertex AI Studio Multimodal](https://cloud.google.com/vertex-ai/generative-ai/docs/multimodal/overview), select the "_Gemini 1.5 Pro"_ model, upload the PDF file and prompt:
 ```
 I want to organize a quiz based on the PDF file.
 Give me 6 questions with multiple choices, and their answers
@@ -185,7 +185,7 @@ Make the previous answer shorter
 The prompt works also with published, but unlisted, YouTube videos. 
 <br/>
 
-If **only audio is available**, it's possible to use [Vertex AI Studio Multimodal](https://cloud.google.com/vertex-ai/generative-ai/docs/multimodal/overview), select the "_Gemini 1.5 Pro" model_, upload the audio file and prompt:
+If **only audio is available**, it's possible to use [Vertex AI Studio Multimodal](https://cloud.google.com/vertex-ai/generative-ai/docs/multimodal/overview), select the "_Gemini 1.5 Pro"_ model, upload the audio file and prompt:
 ```
 Summarize in 4 bullet points
 ```
@@ -197,7 +197,6 @@ Similar approach if only **slides of the sessions** are available. Using Gemini 
 <br/>
 
 ### Prepare the wrap-up email
-
 Open [Google Gemini app](https://gemini.google.com/) and try the following prompt, using the bullet points generated in the previous step:
 ```
 The following bullet points were taken from a session presented at an event. Using them, prepare a wrap-up email to send to all the event attendees. Please also add a feedback request and ask them to register to the community to stay updated on upcoming events.
@@ -216,20 +215,12 @@ The following bullet points were taken from a session presented at an event. Usi
 
 ## Reporting and Analysis
 
-### Count your attendees
-
-Resources
-- https://cloud.google.com/vertex-ai/generative-ai/docs/start/quickstarts/quickstart-multimodal?hl=en
-
-Steps
-- Take a photo of the event attendees
-- In the Google Cloud console, go to the Vertex AI Studio page
-- Click Multimodal
-- Select model: gemini-1.0-pro-vision-001 ([more on models](https://cloud.google.com/vertex-ai/generative-ai/docs/learn/models?hl=en))
-- Upload the picture of the attendees
-- Prompt: "How many people there are in the picture?"
-- Submit the prompt by clicking Submit.
-- Enjoy an automatic count of the number of attendees
+### Count event attendees
+Ideally, event attendees should be checked-in at the entrance. In case it wasn't possible, GenAI comes to the rescue. Take a photo of the event attendees (front audience or at the back of the room both work), use [Vertex AI Studio Multimodal](https://cloud.google.com/vertex-ai/generative-ai/docs/multimodal/overview), select the "_Gemini 1.0 Pro Vision"_ model, upload the image file and prompt:
+```
+How many people there are in the picture?
+```
+Enjoy an automatic count of the number of attendees.
 
 <br/>
 
@@ -249,6 +240,11 @@ Steps
 - Worried about the price for using Vertex AI?
   - [Details on the pricing model](https://cloud.google.com/vertex-ai/generative-ai/pricing)
   - The audio example will cost $0.06:  _$0.00265 / second * 4.5 mins * 60 seconds_
+
+
+### Additional resources
+- https://cloud.google.com/vertex-ai/generative-ai/docs/start/quickstarts/quickstart-multimodal?hl=en
+
 
 
 <br/>
