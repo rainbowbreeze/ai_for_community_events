@@ -1,27 +1,19 @@
-# How ML and AI can help community events planning, execution and analysis
+# How GenAI can help community events planning, execution and analysis
 
-Author: Alfredo Morresi
-
-# EVERYTHING IS STILL IN PROGRESS
+Author: [Alfredo Morresi](https://rainbowbreeze.it)
 
 
-## Prework
-- Create a GCP Project
-- Enable Vertex AI API
-- Enable Cloud Assistant API, to ask questions in the console
-- Request access to Imagen 2 via https://docs.google.com/forms/d/1cqt9padvfMgqn23W5FMPTqh7bW1KLkEOsC5G6uC-uuM/viewform
-
-### Ollama
-https://github.com/ollama/ollama
-https://ollama.com/  
-brew iinstall --cask ollama
-https://ollama.com/library, and insall gemma:7b (ollama run gemma:7b)
-http://localhost:11434/
-
-ollama pull gemma:2b
-ollama pull nomic-embed-text
+# DRAFT EVERYTHING IS STILL IN PROGRESS
 
 
+## What you need to know
+- How to access [Gemini mulltimodal](https://cloud.google.com/vertex-ai/generative-ai/docs/multimodal/overview) capabilities
+  - via [Google AI Studio UI](https://ai.google.dev/) ([list of available countries](https://ai.google.dev/gemini-api/docs/available-regions))
+  - via [Vertex AI Studio UI](https://cloud.google.com/generative-ai-studio)
+  - via [Vertex AI Studio CLI](https://cloud.google.com/vertex-ai/docs/start/cloud-environment)
+
+
+<br/>
 
 ## A word on prompting
 
@@ -30,16 +22,17 @@ Prompt engineering is an art. Practive it without fear of making mistakes!
 ### Some suggestions
 1. Clearly communicate what content or information is most important. Focus on telling the model exactly what you want it to do rather than telling it what not to do.
 1. Structure the prompt:
-    - Defining the role if using one. For example, You are an experienced UX designer at a top tech company
+    - Defining the **role** if using one. For example, You are an experienced UX designer at a top tech company
     - Include context and input data
     - Provide the instructions to the model
     - Add example(s) if you are using them
-1. Use specific, varied examples to help the model narrow its focus and generate more accurate results.
-1. Use constraints to limit the scope of the model's output. For example, Make sure to limit your response to 3 sentences.. This can help avoid meandering away from the instructions into factual inaccuracies.
-1. Break down complex tasks into a sequence of simpler prompts.
-1. Instruct the model to evaluate or check its own responses before producing them. Some examples are: Rate your own work on a scale of 1-10 or Do you think this is correct? Why?.
-1. When prompting the model to gather information or explain a topic, encourage it to cite its source material.
+1. Use specific, varied **examples** to help the model narrow its focus and generate more accurate results.
+1. Use **constraints** to limit the scope of the model's output. For example, Make sure to limit your response to 3 sentences.. This can help avoid meandering away from the instructions into factual inaccuracies.
+1. Break down complex tasks into a **sequence** of simpler prompts.
+1. Instruct the model to **evaluate or check** its own responses before producing them. Some examples are: Rate your own work on a scale of 1-10 or Do you think this is correct? Why?.
+1. When prompting the model to gather information or explain a topic, encourage it to cite its **source material**.
 1. Consider that open-ended question-answering prompts tend to work better than those that restrict model generation. In [this paper](https://openreview.net/forum?id=bhUPJnS2g0X), the researchers found the prompt Who went to the park? outperformed John went to the park. True or False?.
+1. If one-shot prompting doesn't work, break down the process in multiple steps, create a specialized **agent** to take care of each step, and chain the output of an agent as the input for the next one, to arrive to the desired results.
 
 ### General considerations
 - For the most part, Gemini and LLMs may be accurate, but they are prone to errors, so you might want to take the information with a pinch of salt.
@@ -245,7 +238,7 @@ Steps
 
 ### Additional resources
 - https://cloud.google.com/vertex-ai/generative-ai/docs/start/quickstarts/quickstart-multimodal?hl=en
-
+- https://cloud.google.com/vertex-ai/generative-ai/docs/multimodal/overview
 
 
 <br/>
@@ -279,3 +272,13 @@ At the event
 - Q&A the video with Pro windows
 - blogpost about the topic
 
+## TODO
+### Ollama
+https://github.com/ollama/ollama
+https://ollama.com/  
+brew iinstall --cask ollama
+https://ollama.com/library, and insall gemma:7b (ollama run gemma:7b)
+http://localhost:11434/
+
+ollama pull gemma:2b
+ollama pull nomic-embed-text
