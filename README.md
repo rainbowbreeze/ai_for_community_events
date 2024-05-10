@@ -258,7 +258,7 @@ Similarly to the attendees RSVP replies, it's possible to analyze the attendees 
 -	Do you plan to implement what you learned in the near future?_[multiple choice]_
 -	I felt included at this event _[multiple choice]_
 
-After exporting the replies in a CSV of this [this example](https://gdg.community.dev/events/details/google-google-developer-community-online-presents-build-conversational-ai-experiences-powered-by-llms/), upload the file (_or drag and drop it_) in Vertex AI Studio Multimodal, select the "_Gemini 1.5 Pro"_ model, and prompt:
+After exporting the replies in a CSV for this [example event](https://gdg.community.dev/events/details/google-google-developer-community-online-presents-build-conversational-ai-experiences-powered-by-llms/), upload the file (_or drag and drop it_) in Vertex AI Studio Multimodal, select the "_Gemini 1.5 Pro"_ model, and prompt:
 ```
 Analyze attendees satisfaction score and groups topics they liked the most
 ```
@@ -273,7 +273,6 @@ Please note:
 
 
 <br/>
-
 
 ## Conclusion
 GenAI can help a lot in the entire event organization flow. As usual, creativity in prompting, iterations and adding specif context and commands will produce the best results.
@@ -316,17 +315,19 @@ Image generation
 
 <br/>
 
-## Speaker scouting  
+## Speaker scouting
 Scrapers
 - https://github.com/VinciGit00/Scrapegraph-ai
 
-Ollama
+Ollama  
 - https://github.com/ollama/ollama
-  - https://ollama.com/  
+- https://ollama.com/  
 
-brew iinstall --cask ollama
+```
+brew install --cask ollama
 https://ollama.com/library, and insall gemma:7b (ollama run gemma:7b)
 http://localhost:11434/
 
 ollama pull gemma:2b
 ollama pull nomic-embed-text
+```
