@@ -102,6 +102,15 @@ The event will be hosted in SkillsMatter tech space, on May 24 from 6:00 to 8:00
 Write a text to present the event to a potential audience, including the event agenda.
 ```
 
+Let's add some event-specific context:
+```
+You're a community manager. You have organized a speaker session about how to build the first GenAI powered Android app, using Vertex AI.
+The event will be hosted in SkillsMatter tech space, on May 24 from 6:00 to 8:00pm.
+Write a text to present the event to a potential audience, including the event agenda.
+Alfredo Morresi will be the speaker.
+Focus on the unique aspects of the event: it's the first one in the Pavia area about this topic, the speaker is a well-known expert on Android add development, the Q&A session will give the audience an opportunity to ask about real-world experience in developing this kind of mobile app.
+```
+
 Now, let's create some social-media snippets:
 ```
 You're a social media manager. You need to write a text tailoed for X and LinkedIn social media to advertise a speaker session about how to build the first GenAI powered Android app, using Vertex AI.
