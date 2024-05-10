@@ -76,54 +76,45 @@ It should talk about the importance of tech communities, providing examples of t
 
 Alternatively, selecting "Gemini 1.0 Pro Vision", prompt:
 ``` 
-The uploaded pictures provide examples of activities run by a community called "GDG Rainbow". You are an experienced content writer and want to write a blogpost to talk about this community, present it to the audience and provide reasons why the reader cannot miss events organized by GDG Rainbow. Put emphasis on the learning opportunities offered on Google technologies.
+The uploaded pictures provide examples of activities run by a community called "GDG Rainbow". You are an experienced content writer and want to write a short and engaging blogpost to talk about this community, present it to the audience and provide reasons why the reader cannot miss events organized by GDG Rainbow. Put emphasis on the learning opportunities offered on Google technologies.
 ``` 
 
 Things to try:
 - Different variation of the output can be obtained changing temperature parameter, specifying style of the text, etc.
-- [Gemini app](https://gemini.google.com/) can process only one picture at time. Vertex AI Studio, instead, can take more images as input.
-- If there are no past experiences to show, what about using the ones from "similar" communuties?
-
-
-<br/>
-
-## Planning your event
-TODO
-
-
-<br/>
-
-## Speaker selection
-https://github.com/VinciGit00/Scrapegraph-ai
-
-
-<br/>
-
-## Preparing the event
-
-### TODO - Generate event description
-
-Generate some description of what your community does
-```
-Write a short, engaging blog post based on these picture. It should include a description of the meal in the photo and talk about my journey meal prepping. 
-```
-
-Create event description
-Mix something about your community, something about the topics of the event and ask:
-
-```
-You are a newspaper reporter describing quantum entanglement as breaking news. What is the catchy headline?
-```
-
-Then the even title
-
-
-Prompts to try
-- You're a social media manager. You need to write social-media tailored prompt to advertise an event about AngularJS and a new library to create responsive websites.
-Create different snippets of text
 - The more context you give to Gemini, the better it can understand your request and generate a useful response.
   - Instead of..."Write about a sales job.", try this..."Write a job description for a [job title], including the required skills and experience, as well as a summary of [company name] and the position."
   - Instead of..."Create project plan.", try this..."Create a project plan for the launch of a brand new product. The timeframe should be from now until June 2024."
+- [Gemini app](https://gemini.google.com/) can process only one picture at time. Vertex AI Studio, instead, can take more images as input.
+- If there are no past pictures to show, what about using the ones from "twin" communuties?
+
+
+<br/>
+
+## Organizing an event
+
+### Generate event title and description
+Once the topic of the session is decided, prompts can help generating session titles and descriptions to get inspired from. 
+
+In Gemini app, prompt:
+```
+You're a community manager. You have organized a speaker session about how to build the first GenAI powered Android app, using Vertex AI.
+The event will be hosted in SkillsMatter tech space, on May 24 from 6:00 to 8:00pm.
+Write a text to present the event to a potential audience, including the event agenda.
+```
+
+Now, let's create some social-media snippets:
+```
+You're a social media manager. You need to write a text tailoed for X and LinkedIn social media to advertise a speaker session about how to build the first GenAI powered Android app, using Vertex AI.
+List hashtags to use.
+```
+
+Too hyperbolic? Let's fix it:
+```
+You're a social media manager. You need to write a text tailoer for X and LinkedIn social media to advertise a speaker session about how to build the first GenAI powered Android app, using Vertex AI.
+List hashtags to use.
+The post targets a tech audience, so avoid all the marketing buzz.
+```
+
 
 ### TODO - Generate event creativity
 
