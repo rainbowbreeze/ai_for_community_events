@@ -124,34 +124,14 @@ List hashtags to use.
 The post targets a tech audience, so avoid all the marketing buzz.
 ```
 
+<br/>
 
-### TODO - Generate event creativity
-
-Resouces
-- https://cloud.google.com/vertex-ai/generative-ai/docs/image/overview?hl=en
-- https://www.youtube.com/watch?v=pN-RTBq6i3I
-- https://cloud.google.com/blog/products/ai-machine-learning/imagen-2-on-vertex-ai-is-now-generally-available
-
-Steps
-- In the Google Cloud console, go to the Vertex AI Studio page
-- Click Vision Powered by Imagen 
-- Click "Generate" to write your prompt
-
-
-In case you wanna use a different model
-- In the Google Cloud console, go to the Vertex AI Model Garden page
-- Select StableDiffusion or other models
-
-
-### Accessibility for your images
-Steps
-- In the Google Cloud console, go to the Vertex AI Studio page
-- Upload images for your event
-- Press "Generate caption" to get the text to add in the ALT attribute of the image
-
-
-### TODO - Generate voice for podcasts and other media
-TODO
+### Improve accessibility with alt text
+Images help people understand content and make it more pleasant, but for those with visual impairments, alt tags are crucial. They describe the image and provide context, making your community or event page accessible and SEO-friendly.  
+To generate alt text for images:
+- Open [Vertex AI Studio Vision](https://console.cloud.google.com/vertex-ai/generative/vision)
+- Uploade the image and click on "Generate Caption"
+- (_Adjust and_) Copy the generated text to add in the ALT attribute of the image
 
 
 <br/>
@@ -305,3 +285,6 @@ http://localhost:11434/
 
 ollama pull gemma:2b
 ollama pull nomic-embed-text
+
+### Image generation
+- https://huggingface.co/spaces/stabilityai/stable-diffusion
