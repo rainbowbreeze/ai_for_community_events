@@ -221,7 +221,7 @@ Enjoy an automatic count of the number of attendees.
 
 <br/>
 
-### Attendees Analysis
+### TODO - Attendees Analysis
 
 Steps
 - Open Gemini
@@ -246,23 +246,10 @@ Steps
 
 <br/>
 <br/>
+<br/>
+<br/>
 
-## Ideas to explore
-- https://github.com/trending
-- https://dev.events/
-- https://www.gdeltproject.org/about.html
-
-Conferences
-- https://www.wearedevelopers.com/
-- https://ng-conf.org/speakers/
-- https://nyc24.devrelcon.dev/
-- https://conferences.codemotion.com/milan2023-live/agenda/
-
-
-- Deploy stablediffusion via VertexAI (also Imagen)
-- HuggingFace checkpoint to call for getting images
-  - Deploy solution to HF so people can visit it
-
+## IGNORE - Ideas to explore
 At the event
 - Agent to get the pizza
 - Manage the logistic
@@ -270,21 +257,39 @@ At the event
 - do opening for the event (speaker, opening, generate text)
 - feedback form generation (based on the talks and general question)
 - thank you notes for the attendees
-- resume of the talk points
-- record the video and parse it
-- Q&A the video with Pro windows
 - blogpost about the topic
 
-## TODO
-### Ollama
-https://github.com/ollama/ollama
-https://ollama.com/  
+Sources for event topics
+- https://github.com/trending
+- https://dev.events/
+- https://www.gdeltproject.org/about.html
+
+Sources for conferences and speakers
+- https://www.wearedevelopers.com/
+- https://ng-conf.org/speakers/
+- https://nyc24.devrelcon.dev/
+- https://conferences.codemotion.com/milan2023-live/agenda/
+
+Image generation
+- https://huggingface.co/spaces/stabilityai/stable-diffusion
+- Deploy stablediffusion via VertexAI (also Imagen)
+- HuggingFace checkpoint to call for getting images
+- Deploy solution to HF so people can visit it
+
+
+<br/>
+
+## Speaker scouting  
+Scrapers
+- https://github.com/VinciGit00/Scrapegraph-ai
+
+Ollama
+- https://github.com/ollama/ollama
+  - https://ollama.com/  
+
 brew iinstall --cask ollama
 https://ollama.com/library, and insall gemma:7b (ollama run gemma:7b)
 http://localhost:11434/
 
 ollama pull gemma:2b
 ollama pull nomic-embed-text
-
-### Image generation
-- https://huggingface.co/spaces/stabilityai/stable-diffusion
