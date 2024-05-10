@@ -74,7 +74,7 @@ You are a content writer and you want to write an engaging blog post to present 
 It should talk about the importance of tech communities, providing examples of their activities taken from these pictures, and invite reader to join the community events to learn something new about Google technologies.
 ``` 
 
-Alternatively, selecting "Gemini 1.0 Pro Vision", prompt:
+Alternatively, select _"Gemini 1.0 Pro Vision"_ model and prompt:
 ``` 
 The uploaded pictures provide examples of activities run by a community called "GDG Rainbow". You are an experienced content writer and want to write a short and engaging blogpost to talk about this community, present it to the audience and provide reasons why the reader cannot miss events organized by GDG Rainbow. Put emphasis on the learning opportunities offered on Google technologies.
 ``` 
@@ -139,11 +139,34 @@ To generate alt text for images:
 
 <br/>
 
+## Before the event 
+
+### Understand your event audience
+Using community platforms which allow to gather RSVPs and ask for attendees questions, is possible to get insights on what they expect from the event, and potentially make adjustement to tailor-made the event for them.  
+
+For example, [GDG Event Platforms](https://gdg.community.dev/) asks these additional questions during the event registration (more can be added by community organizers), and allows to export them as CSV for further analysis:
+- How did you learn about this event? _[multiple choice]_
+- My level of developer experience is... _[multiple choice]_
+- What are you most excited to learn about at this event? _[free text]_
+
+Using [this event](https://gdg.community.dev/events/details/google-google-developer-community-online-presents-build-conversational-ai-experiences-powered-by-llms/) as example, it's possible to export the RSVP data into a CSV, upload the file (_or drag and drop it_) in Vertex AI Studio Multimodal, select the "_Gemini 1.5 Pro"_ model, and prompt:
+```
+How did the attendees know about the event? Show percentage and detailed analysis
+```
+Or
+```
+What's the average experience of event attendees, and what they expect from the event?
+```
+
+
+
+<br/>
+
 ## At the event
 
 ### Generate question for the Q&A session with the speaker
 It may happen that no one wants to break the ice during a Q&A session making the first question. Hence, having a list of few ready-made ones to fill that awkward silence can be helpful.  
-If the speaker provides a presentation in advance, it's possible to get them using [Vertex AI Studio Multimodal](https://cloud.google.com/vertex-ai/generative-ai/docs/multimodal/overview), select the "_Gemini 1.5 Pro"_ model, upload the PDF file and prompt:
+If the speaker provides a presentation in advance, it's possible to get them using Vertex AI Studio Multimodal, select the "_Gemini 1.5 Pro"_ model, upload the PDF file and prompt:
 ```
 Give me 5 thoughtful questions to ask to the presenter of the talk in the PDF file
 ```
@@ -152,7 +175,7 @@ Give me 5 thoughtful questions to ask to the presenter of the talk in the PDF fi
 
 ### Organize quizzes for the attendees
 Sometimes there are gadgets and swags to distribute to event attendees. Instead of randomly assigning them with a raffle, why not rewarding who really listened to the content presented? Assuming there is a PDF of the session, there is an easy way to generate questions and answers.  
-Use [Vertex AI Studio Multimodal](https://cloud.google.com/vertex-ai/generative-ai/docs/multimodal/overview), select the "_Gemini 1.5 Pro"_ model, upload the PDF file and prompt:
+Use Vertex AI Studio Multimodal, select the "_Gemini 1.5 Pro"_ model, upload the PDF file and prompt:
 ```
 I want to organize a quiz based on the PDF file.
 Give me 6 questions with multiple choices, and their answers
@@ -185,7 +208,7 @@ Make the previous answer shorter
 The prompt works also with published, but unlisted, YouTube videos. 
 <br/>
 
-If **only audio is available**, it's possible to use [Vertex AI Studio Multimodal](https://cloud.google.com/vertex-ai/generative-ai/docs/multimodal/overview), select the "_Gemini 1.5 Pro"_ model, upload the audio file and prompt:
+If **only audio is available**, it's possible to use [Vertex AI Studio Multimodal](https://cloud.google.com/vertex-ai/generative-ai/docs/multimodal/overview), select the "_Gemini 1.5 Pro"_ model, upload the audio file (_drag and drop it the upload grays out the file_) and prompt:
 ```
 Summarize in 4 bullet points
 ```
@@ -196,7 +219,7 @@ Similar approach if only **slides of the sessions** are available. Using Gemini 
 
 <br/>
 
-### Prepare the wrap-up email
+### Prepare a wrap-up email
 Open [Google Gemini app](https://gemini.google.com/) and try the following prompt, using the bullet points generated in the previous step:
 ```
 The following bullet points were taken from a session presented at an event. Using them, prepare a wrap-up email to send to all the event attendees. Please also add a feedback request and ask them to register to the community to stay updated on upcoming events.
@@ -224,13 +247,25 @@ Enjoy an automatic count of the number of attendees.
 
 <br/>
 
-### TODO - Attendees Analysis
+### Attendees feedback analysis
+Similarly to the attendees RSVP replies, it's possible to analyze the attendees feedback, assuming they replied to the attendees feedback forms. GDG Event Platform ask for these questions:
+- Would you join another event organized by this community based on your experience? _[multiple choice]_
+- How well did the content of the event meet your expectations?_[multiple choice]_
+-	What topic did you like most at this event?_[free text]_
+-	Do you plan to implement what you learned in the near future?_[multiple choice]_
+-	I felt included at this event _[multiple choice]_
 
-Steps
-- Open Gemini
-- TODO: get your answers from Bevy
-- Ask it if it will summarize a set of data, giving as much specifics as possible (i.e. please summarize this survey data from an internal reading challenge). Paste the data and press enter.
-  - One challenge I came across though was that sometimes Gemini would hallucinate and I had to try different prompts and ways to verify if how it categorises the responses is legit. Asking to illustrate data categorisation with quotes from respondents proved to work the best. 
+After exporting the replies in a CSV of this [this example](https://gdg.community.dev/events/details/google-google-developer-community-online-presents-build-conversational-ai-experiences-powered-by-llms/), upload the file (_or drag and drop it_) in Vertex AI Studio Multimodal, select the "_Gemini 1.5 Pro"_ model, and prompt:
+```
+Analyze attendees satisfaction score and groups topics they liked the most
+```
+Or something sligtlhy more advanced:
+´´´
+How willingness to suggest the event and satisfaction score are correlated?
+´´´
+
+Please note:
+- LLMs allucinate: try different and specific prompts and verify them. Asking to illustrate data categorisation with quotes from respondents proved to work the best. 
 
 
 <br/>
