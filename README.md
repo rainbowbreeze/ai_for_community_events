@@ -97,29 +97,32 @@ Once the topic of the session is decided, prompts can help generating session ti
 
 In Gemini app, prompt:
 ```
-You're a community manager. You have organized a speaker session about how to build the first GenAI powered Android app, using Vertex AI.
-The event will be hosted in SkillsMatter tech space, on May 24 from 6:00 to 8:00pm.
+You're a community manager.
+You organized a speaker session about how to build the first GenAI powered Android app, using Vertex AI.
 Write a text to present the event to a potential audience, including the event agenda.
 ```
 
 Let's add some event-specific context:
 ```
-You're a community manager. You have organized a speaker session about how to build the first GenAI powered Android app, using Vertex AI.
-The event will be hosted in SkillsMatter tech space, on May 24 from 6:00 to 8:00pm.
+You're a community manager.
+You organized a speaker session about how to build the first GenAI powered Android app, using Vertex AI.
 Write a text to present the event to a potential audience, including the event agenda.
+The event will be hosted in SkillsShare tech space in Pavia, on May 24 from 6:00 to 8:00pm.
 Alfredo Morresi will be the speaker.
 Focus on the unique aspects of the event: it's the first one in the Pavia area about this topic, the speaker is a well-known expert on Android add development, the Q&A session will give the audience an opportunity to ask about real-world experience in developing this kind of mobile app.
 ```
 
 Now, let's create some social-media snippets:
 ```
-You're a social media manager. You need to write a text tailoed for X and LinkedIn social media to advertise a speaker session about how to build the first GenAI powered Android app, using Vertex AI.
+You're a social media manager.
+You need to write a text tailoed for X and LinkedIn social media to advertise a speaker session about how to build the first GenAI powered Android app, using Vertex AI.
 List hashtags to use.
 ```
 
 Too hyperbolic? Let's fix it:
 ```
-You're a social media manager. You need to write a text tailoer for X and LinkedIn social media to advertise a speaker session about how to build the first GenAI powered Android app, using Vertex AI.
+You're a social media manager.
+You need to write a text tailoer for X and LinkedIn social media to advertise a speaker session about how to build the first GenAI powered Android app, using Vertex AI.
 List hashtags to use.
 The post targets a tech audience, so avoid all the marketing buzz.
 ```
