@@ -28,7 +28,9 @@ Prompt engineering is an art. Practive it without fear of making mistakes!
 1. Instruct the model to **evaluate or check** its own responses before producing them. Some examples are: Rate your own work on a scale of 1-10 or Do you think this is correct? Why?.
 1. When prompting the model to gather information or explain a topic, encourage it to cite its **source material**.
 1. Consider that open-ended question-answering prompts tend to work better than those that restrict model generation. In [this paper](https://openreview.net/forum?id=bhUPJnS2g0X), the researchers found the prompt Who went to the park? outperformed John went to the park. True or False?.
-1. If one-shot prompting doesn't work, break down the process in multiple steps, create a specialized **agent** to take care of each step, and chain the output of an agent as the input for the next one, to arrive to the desired results.
+1. If one-shot prompting doesn't work, break apart the process in multiple steps, create a specialized **agent** to take care of each step, and chain the output of an agent as the input for the next one, to arrive to the desired results.
+
+<br/>
 
 ### General considerations
 - For the most part, Gemini and LLMs may be accurate, but they are prone to errors, so you might want to take the information with a pinch of salt.
@@ -212,8 +214,9 @@ If **only audio is available**, it's possible to use [Vertex AI Studio Multimoda
 ```
 Summarize in 4 bullet points
 ```
-With 1M context window (and counting), up to 11 hours of audio can be summarized.
-<br/>
+With 1M context window (and counting), up to 11 hours of audio can be summarized.  
+
+Worried about the price for using Vertex AI? [Details on the pricing model](https://cloud.google.com/vertex-ai/generative-ai/pricing), and an audio example of 4 mins costs $0.06:  _$0.00265 / second * 4.5 mins * 60 seconds_
 
 Similar approach if only **slides of the sessions** are available. Using Gemini 1.5 Pro model in Vertex AI Studio Multimodal it would be possible to summarize the PDF document of the session.
 
@@ -259,27 +262,23 @@ After exporting the replies in a CSV of this [this example](https://gdg.communit
 ```
 Analyze attendees satisfaction score and groups topics they liked the most
 ```
+
 Or something sligtlhy more advanced:
-´´´
-How willingness to suggest the event and satisfaction score are correlated?
-´´´
+```
+How the willingness to suggest the event and satisfaction score are correlated?
+```
 
 Please note:
-- LLMs allucinate: try different and specific prompts and verify them. Asking to illustrate data categorisation with quotes from respondents proved to work the best. 
+- LLMs sometimes allucinate: try different and specific prompts and verify them. Asking to illustrate data categorisation with quotes from respondents proved to work the best. 
 
 
 <br/>
 
-## Final consideration
-- As usual, If you want Gemini to perform several related tasks, break them apart into separate prompts. This helps the AI understand the task and provide useful responses.
-- Worried about the price for using Vertex AI?
-  - [Details on the pricing model](https://cloud.google.com/vertex-ai/generative-ai/pricing)
-  - The audio example will cost $0.06:  _$0.00265 / second * 4.5 mins * 60 seconds_
 
+## Conclusion
+GenAI can help a lot in the entire event organization flow. As usual, creativity in prompting, iterations and adding specif context and commands will produce the best results.
 
-### Additional resources
-- https://cloud.google.com/vertex-ai/generative-ai/docs/start/quickstarts/quickstart-multimodal?hl=en
-- https://cloud.google.com/vertex-ai/generative-ai/docs/multimodal/overview
+Have a great event planning!
 
 
 <br/>
