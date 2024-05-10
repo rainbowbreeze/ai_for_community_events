@@ -3,14 +3,10 @@
 Author: [Alfredo Morresi](https://rainbowbreeze.it)
 
 
-# DRAFT EVERYTHING IS STILL IN PROGRESS
+As a community manager, are you tired of juggling event details and missing out on creative inspiration?  
+Here some practical strategies to leverage GenAI-powered tools for community managers, and optimize the entire event planning process. Tips to help with creative asset and marketing material creation, session topic selection, survey analysis, attendee data insights, and more.
 
-
-## What you need to know
-- How to access [Gemini mulltimodal](https://cloud.google.com/vertex-ai/generative-ai/docs/multimodal/overview) capabilities
-  - via [Google AI Studio UI](https://ai.google.dev/) ([list of available countries](https://ai.google.dev/gemini-api/docs/available-regions))
-  - via [Vertex AI Studio UI](https://cloud.google.com/generative-ai-studio)
-  - via [Vertex AI Studio CLI](https://cloud.google.com/vertex-ai/docs/start/cloud-environment)
+Do you have your "magic tips" to share? Pull requests are welcome!
 
 
 <br/>
@@ -44,22 +40,49 @@ Suggestions on prompting? https://ai.google.dev/examples
 
 <br/>
 
-## TODO - Introduce your community to the rest of the world
+## What you need to know
+In order to try the different suggestions, a way to access [Gemini mulltimodal](https://cloud.google.com/vertex-ai/generative-ai/docs/multimodal/overview) capabilities is required.
+- [Google AI Studio UI](https://ai.google.dev/)
+  - Free to use to test the different prompts
+  - [List of available countries](https://ai.google.dev/gemini-api/docs/available-regions)
+  - TODO: link to a YouTube video
+- [Vertex AI Studio Multimodal](https://cloud.google.com/generative-ai-studio)
+  - Setup a GCP account and project
+  - Open [Vertex AI Studio](https://console.cloud.google.com/vertex-ai/generative) homepage
+    - Open "Multimodal Home"
+    - Select "Prompt design (single turn)" or open one of the Sample prompts
+  - TODO: link to a YouTube video
+- [Gemini app](https://gemini.google.com/)
+  - Open [Gemini app](https://gemini.google.com/)
+    - Free usage for the basic model
+    - To use the Gemini Advanced model, a [Google One AI Premium plan](https://one.google.com/explore-plan/gemini-advanced) has to be activated (free for the first 2 months)
+  - TODO: link to a YouTube video
+- Other options
+  - [Vertex AI Studio CLI](https://cloud.google.com/vertex-ai/docs/start/cloud-environment)
 
-Steps
-- Gather some images of your community activities.
-  - If not available, visit https://developers.google.com/community/gdg and download the 3 pictures in the page ([image1](https://developers.googleblog.com/2022/08/a-conversation-with-android-developer-and-community-builder-ceren-tunay.html), [image2](https://developers.google.com/static/community/gdg/images/bailey_480.jpeg), [image3](https://developers.google.com/static/community/gdg/images/lesego-and-simon_480.jpeg))
-- Open Vertex AI Multimodal
 
+<br/>
 
-Prompts
+## Introduce the community to the world
+
+### Write an intro text to present the community
+The community landing page is an important showcase to "tell the why and the how" of the community, and attract new members. How to capture its true essence and put it into words? For example, using footage of past community experiences.
+
+After gathering some pictures of past events, access Vertex AI Studio Multimodal, select the "_Gemini 1.5 Pro"_ model, upload the images and prompt:
 ```
-These pictures show different activities organized by tech communitis. Write an engaging blog post based on these pictures. It should talk about the importance of tech communities, providing examples of their activities taken from these pictures. 
+You are a content writer and you want to write an engaging blog post to present a community and its activities, based on the uploaded pictures.
+It should talk about the importance of tech communities, providing examples of their activities taken from these pictures, and invite reader to join the community events to learn something new about Google technologies.
+``` 
 
-Write an engaging blog post based on these pictures. It should talk about the importance of tech communities, using activities represented in these pictures. 
-```
+Alternatively, selecting "Gemini 1.0 Pro Vision", prompt:
+``` 
+The uploaded pictures provide examples of activities run by a community called "GDG Rainbow". You are an experienced content writer and want to write a blogpost to talk about this community, present it to the audience and provide reasons why the reader cannot miss events organized by GDG Rainbow. Put emphasis on the learning opportunities offered on Google technologies.
+``` 
 
-Try the output differences using "Gemini Experimental" vs "Gemini-1.0-pro-vision.001".  
+Things to try:
+- Different variation of the output can be obtained changing temperature parameter, specifying style of the text, etc.
+- [Gemini app](https://gemini.google.com/) can process only one picture at time. Vertex AI Studio, instead, can take more images as input.
+- If there are no past experiences to show, what about using the ones from "similar" communuties?
 
 
 <br/>
@@ -166,7 +189,7 @@ Each riddle starts with a statement, and finishes with a question
 ### Summarize the content of the session
 If there is a **YouTube video of the session** available, [Google Gemini YouTube extension](https://support.google.com/gemini/answer/13695044) can help quickly summarize, analyze and ask questions about the video. Given video captions are available.
 
-Open [Google Gemini app](https://gemini.google.com/) and try the following prompt:
+Open [Gemini app](https://gemini.google.com/) and try the following prompt:
 ```
 Please summarize the content of the video at https://www.youtube.com/watch?v=9YowQrFxEWg using 6 bullet points
 ```
