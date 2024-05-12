@@ -274,6 +274,11 @@ Please note: LLMs sometimes allucinate: try different and specific prompts and v
 
 ## Conclusion
 GenAI can help a lot in the entire event organization flow. As usual, creativity in prompting, iterations and adding specif context and commands will produce the best results.
+There are other tasks, not yet included in this presentation, where LLM could help. For example:
+- Create opening notes for the event
+- Generate creativity for the event
+- Generate a wrap-up blogpost about the event (using slides of the content, picture of the attendees)
+- Write a detailed description of the session to upload to YouTube
 
 Have a great event planning!
 
@@ -284,15 +289,6 @@ Have a great event planning!
 <br/>
 
 ## IGNORE - Ideas to explore
-At the event
-- Agent to get the pizza
-- Manage the logistic
-- food and drinks
-- do opening for the event (speaker, opening, generate text)
-- feedback form generation (based on the talks and general question)
-- thank you notes for the attendees
-- blogpost about the topic
-
 Sources for event topics
 - https://github.com/trending
 - https://dev.events/
