@@ -16,18 +16,14 @@ Do you have your "magic tips" to share? Pull requests are welcome!
 Prompt engineering is an art. Practive it without fear of making mistakes!
 
 ### Some suggestions
-1. Clearly communicate what content or information is most important. Focus on telling the model exactly what you want it to do rather than telling it what not to do.
-1. Structure the prompt:
-    - Defining the **role** if using one. For example, You are an experienced UX designer at a top tech company
-    - Include context and input data
-    - Provide the instructions to the model
-    - Add example(s) if you are using them
+1. Clearly communicate what **content or information is most important**. Focus on telling the model exactly what you want it to do rather, and refine iteratively telling it what not to do.
+1. Defining the **role** if using one. For example, _You are an experienced UX designer at a tech company_, or _You are a senior community manager_, etc.
+1. Include **context and input data**.
 1. Use specific, varied **examples** to help the model narrow its focus and generate more accurate results.
 1. Use **constraints** to limit the scope of the model's output. For example, Make sure to limit your response to 3 sentences.. This can help avoid meandering away from the instructions into factual inaccuracies.
 1. Break down complex tasks into a **sequence** of simpler prompts.
-1. Instruct the model to **evaluate or check** its own responses before producing them. Some examples are: Rate your own work on a scale of 1-10 or Do you think this is correct? Why?.
+1. Instruct the model to **evaluate or check** its own responses before producing them. Some examples are: _Rate your own work on a scale of 1-10_, or _Do you think this is correct? Why?_, etc.
 1. When prompting the model to gather information or explain a topic, encourage it to cite its **source material**.
-1. Consider that open-ended question-answering prompts tend to work better than those that restrict model generation. In [this paper](https://openreview.net/forum?id=bhUPJnS2g0X), the researchers found the prompt Who went to the park? outperformed John went to the park. True or False?.
 1. If one-shot prompting doesn't work, break apart the process in multiple steps, create a specialized **agent** to take care of each step, and chain the output of an agent as the input for the next one, to arrive to the desired results.
 
 <br/>
@@ -44,7 +40,7 @@ Suggestions on prompting? https://ai.google.dev/examples
 
 ## What you need to know
 In order to try the different suggestions, a way to access [Gemini mulltimodal](https://cloud.google.com/vertex-ai/generative-ai/docs/multimodal/overview) capabilities is required.
-- [Google AI Studio UI](https://ai.google.dev/)
+- [Google AI Studio](https://ai.google.dev/)
   - Free to use to test the different prompts
   - [List of available countries](https://ai.google.dev/gemini-api/docs/available-regions)
   - TODO: link to a YouTube video
@@ -73,7 +69,7 @@ The community landing page is an important showcase to "tell the why and the how
 After gathering some pictures of past events, access Vertex AI Studio Multimodal, select the "_Gemini 1.5 Pro"_ model, upload the images and prompt:
 ```
 You are a content writer and you want to write an engaging blog post to present a community and its activities, based on the uploaded pictures.
-It should talk about the importance of tech communities, providing examples of their activities taken from these pictures, and invite reader to join the community events to learn something new about Google technologies.
+It should talk about the importance of tech communities, providing examples of their activities taken from these pictures, and invite readers to join the community events to learn something new about Google technologies.
 ``` 
 
 Alternatively, select _"Gemini 1.0 Pro Vision"_ model and prompt:
@@ -84,10 +80,13 @@ The uploaded pictures provide examples of activities run by a community called "
 Things to try:
 - Different variation of the output can be obtained changing temperature parameter, specifying style of the text, etc.
 - The more context you give to Gemini, the better it can understand your request and generate a useful response.
-  - Instead of..."Write about a sales job.", try this..."Write a job description for a [job title], including the required skills and experience, as well as a summary of [company name] and the position."
-  - Instead of..."Create project plan.", try this..."Create a project plan for the launch of a brand new product. The timeframe should be from now until June 2024."
 - [Gemini app](https://gemini.google.com/) can process only one picture at time. Vertex AI Studio, instead, can take more images as input.
-- If there are no past pictures to show, what about using the ones from "twin" communuties?
+- If there are no past pictures to show, what about using the ones from "twin communuties"?
+
+<br/>
+
+### TODO - Present your community to a sponsor
+
 
 
 <br/>
@@ -111,7 +110,7 @@ You organized a speaker session about how to build the first GenAI powered Andro
 Write a text to present the event to a potential audience, including the event agenda.
 The event will be hosted in SkillsShare tech space in Pavia, on May 24 from 6:00 to 8:00pm.
 Alfredo Morresi will be the speaker.
-Focus on the unique aspects of the event: it's the first one in the Pavia area about this topic, the speaker is a well-known expert on Android add development, the Q&A session will give the audience an opportunity to ask about real-world experience in developing this kind of mobile app.
+Focus on the unique aspects of the event: it's the first one in the Pavia area about this topic, the speaker is a well-known expert on Android app development, the Q&A session will give the audience an opportunity to ask about real-world experience in developing this kind of mobile app.
 ```
 
 Now, let's create some social-media snippets:
@@ -268,8 +267,7 @@ Or something sligtlhy more advanced:
 How the willingness to suggest the event and satisfaction score are correlated?
 ```
 
-Please note:
-- LLMs sometimes allucinate: try different and specific prompts and verify them. Asking to illustrate data categorisation with quotes from respondents proved to work the best. 
+Please note: LLMs sometimes allucinate: try different and specific prompts and verify them. Asking to illustrate data categorisation with quotes from respondents proved to work the best. 
 
 
 <br/>
