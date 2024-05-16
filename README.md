@@ -4,7 +4,7 @@ Author: [Alfredo Morresi](https://rainbowbreeze.it)
 
 
 As a community manager, are you tired of juggling event details and missing out on creative inspiration?  
-Here some practical strategies to leverage GenAI-powered tools for community managers, and optimize the entire event planning process. Tips to help with creative asset and marketing material creation, session topic selection, survey analysis, attendee data insights, and more.
+Here some practical strategies to leverage GenAI-powered tools for community managers, and optimize the entire event planning, exectuion and reporting process. Tips to help with creative asset and marketing material creation, session topic selection, survey analysis, attendee data insights, and more.
 
 Do you have your "magic tips" to share? Pull requests are welcome!
 
@@ -16,7 +16,7 @@ Do you have your "magic tips" to share? Pull requests are welcome!
 Prompt engineering is an art. Practive it without fear of making mistakes!
 
 ### Some suggestions
-1. Clearly communicate what **content or information is most important**. Focus on telling the model exactly what you want it to do rather, and refine iteratively telling it what not to do.
+1. Clearly communicate what **content or information is most important**. Focus on telling the model exactly what you want it to do, and refine iteratively telling it what not to do.
 1. Defining the **role** if using one. For example, _You are an experienced UX designer at a tech company_, or _You are a senior community manager_, etc.
 1. Include **context and input data**.
 1. Use specific, varied **examples** to help the model narrow its focus and generate more accurate results.
@@ -43,18 +43,15 @@ In order to try the different suggestions, a way to access [Gemini mulltimodal](
 - [Google AI Studio](https://ai.google.dev/)
   - Free to use to test the different prompts
   - [List of available countries](https://ai.google.dev/gemini-api/docs/available-regions)
-  - TODO: link to a YouTube video
 - [Vertex AI Studio Multimodal](https://cloud.google.com/generative-ai-studio)
   - Setup a GCP account and project
   - Open [Vertex AI Studio](https://console.cloud.google.com/vertex-ai/generative) homepage
     - Open "Multimodal Home"
     - Select "Prompt design (single turn)" or open one of the Sample prompts
-  - TODO: link to a YouTube video
 - [Gemini app](https://gemini.google.com/)
   - Open [Gemini app](https://gemini.google.com/)
     - Free usage for the basic model
     - To use the Gemini Advanced model, a [Google One AI Premium plan](https://one.google.com/explore-plan/gemini-advanced) has to be activated (free for the first 2 months)
-  - TODO: link to a YouTube video
 - Other options
   - [Vertex AI Studio CLI](https://cloud.google.com/vertex-ai/docs/start/cloud-environment)
 
@@ -68,13 +65,10 @@ The community landing page is an important showcase to "tell the why and the how
 
 After gathering some pictures of past events, access Vertex AI Studio Multimodal, select the "_Gemini 1.5 Pro"_ model, upload the images and prompt:
 ```
-You are a content writer and you want to write an engaging blog post to present a community and its activities, based on the uploaded pictures.
+You are a content writer and you want to write an engaging landing page text to present a community and its activities, based on the uploaded pictures.
+The community name is GDG Rainbow.
 It should talk about the importance of tech communities, providing examples of their activities taken from these pictures, and invite readers to join the community events to learn something new about Google technologies.
-``` 
-
-Alternatively, select _"Gemini 1.0 Pro Vision"_ model and prompt:
-``` 
-The uploaded pictures provide examples of activities run by a community called "GDG Rainbow". You are an experienced content writer and want to write a short and engaging blogpost to talk about this community, present it to the audience and provide reasons why the reader cannot miss events organized by GDG Rainbow. Put emphasis on the learning opportunities offered on Google technologies.
+Put emphasis on the learning opportunities offered on Google technologies.
 ``` 
 
 Things to try:
@@ -85,7 +79,8 @@ Things to try:
 
 <br/>
 
-### TODO - Present your community to a sponsor
+### Contact a sponsor for your community event
+Getting a sponsor for one or more events is great, but how to maximize the 
 
 
 
