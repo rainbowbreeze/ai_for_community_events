@@ -177,7 +177,7 @@ In case the content is suitable for a more "interactive" approach, the following
 ```
 Using the attached presentation, create 7 riddles, in rhymes, and their answers.
 Each riddle starts with a statement, and finishes with a question
-Provide 3 alternative replies, with one of the correct, and the other two wrong.
+Provide 3 alternative replies: one correct and two wrong.
 Quote the slide the riddle refers to, and the correct reply.
 ```
 
