@@ -14,26 +14,23 @@ Do you have your "magic tips" to share? Pull requests are welcome!
 ## A word on prompting
 
 Prompt engineering is an art. Practive it without fear of making mistakes!
-
-### Some suggestions
-1. Clearly communicate what **content or information is most important**. Focus on telling the model exactly what you want it to do, and refine iteratively telling it what not to do.
-1. Defining the **role** if using one. For example, _You are an experienced UX designer at a tech company_, or _You are a senior community manager_, etc.
-1. Include **context and input data**.
-1. Use specific, varied **examples** to help the model narrow its focus and generate more accurate results.
-1. Use **constraints** to limit the scope of the model's output. For example, Make sure to limit your response to 3 sentences.. This can help avoid meandering away from the instructions into factual inaccuracies.
-1. Break down complex tasks into a **sequence** of simpler prompts.
-1. Instruct the model to **evaluate or check** its own responses before producing them. Some examples are: _Rate your own work on a scale of 1-10_, or _Do you think this is correct? Why?_, etc.
-1. When prompting the model to gather information or explain a topic, encourage it to cite its **source material**.
-1. If one-shot prompting doesn't work, break apart the process in multiple steps, create a specialized **agent** to take care of each step, and chain the output of an agent as the input for the next one, to arrive to the desired results.
+- Clearly communicate what **content or information is most important**. Focus on telling the model exactly what you want it to do, and refine iteratively telling it what not to do.
+- Defining the **role** if using one. For example, _You are an experienced UX designer at a tech company_, or _You are a senior community manager_, etc.
+- Include **context and input data**.
+- Use specific, varied **examples** to help the model narrow its focus and generate more accurate results.
+- Use **constraints** to limit the scope of the model's output. For example, Make sure to limit your response to 3 sentences.. This can help avoid meandering away from the instructions into factual inaccuracies.
+- Break down complex tasks into a **sequence** of simpler prompts.
+- Instruct the model to **evaluate or check** its own responses before producing them. Some examples are: _Rate your own work on a scale of 1-10_, or _Do you think this is correct? Why?_, etc.
+- When prompting the model to gather information or explain a topic, encourage it to cite its **source material**.
+- If one-shot prompting doesn't work, break apart the process in multiple steps, create a specialized **agent** to take care of each step, and chain the output of an agent as the input for the next one, to arrive to the desired results.
+- Additional suggestions on prompting at https://ai.google.dev/examples
 
 <br/>
 
-### General considerations
+Please keep in mind:  
 - For the most part, Gemini and LLMs may be accurate, but they are prone to errors, so you might want to take the information with a pinch of salt.
 - Human review is a large part of the LLM improvement process. Do not enter sensitive or personal information.
 - And perhaps most important: Be creative! LLMs and prompt engineering are still in their infancy, and evolving every day. Who knows, you might even discover the newest emergent ability.
-
-Suggestions on prompting? https://ai.google.dev/examples
 
 
 <br/>
@@ -52,8 +49,6 @@ In order to try the different suggestions, a way to access [Gemini mulltimodal](
   - Open [Gemini app](https://gemini.google.com/)
     - Free usage for the basic model
     - To use the Gemini Advanced model, a [Google One AI Premium plan](https://one.google.com/explore-plan/gemini-advanced) has to be activated (free for the first 2 months)
-- Other options
-  - [Vertex AI Studio CLI](https://cloud.google.com/vertex-ai/docs/start/cloud-environment)
 
 
 <br/>
