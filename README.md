@@ -75,9 +75,7 @@ Things to try:
 - Different variation of the output can be obtained changing temperature parameter, specifying style of the text, etc.
 - The more context you give to Gemini, the better it can understand your request and generate a useful response.
 - [Gemini app](https://gemini.google.com/) can process only one picture at time. Vertex AI Studio, instead, can take more images as input.
-- If there are no past pictures to show, what about using the ones from "twin communuties"?
-
-<br/>
+- If there are no past pictures to show, pictures of "twin communuties" can be used.
 
 
 <br/>
