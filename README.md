@@ -68,7 +68,7 @@ After gathering some pictures of past events, access Vertex AI Studio Multimodal
 You are a content writer and you want to write an engaging landing page text to present a community and its activities, based on the uploaded pictures.
 The community name is GDG Rainbow.
 It should talk about the importance of tech communities, providing examples of their activities taken from these pictures, and invite readers to join the community events to learn something new about Google technologies.
-Put emphasis on the learning opportunities offered on Google technologies.
+Put emphasis on the learning opportunities offered on Google technologies, and the possibility to create connections with the local ecosystem of developers.
 ``` 
 
 Things to try:
@@ -78,10 +78,6 @@ Things to try:
 - If there are no past pictures to show, what about using the ones from "twin communuties"?
 
 <br/>
-
-### Contact a sponsor for your community event
-Getting a sponsor for one or more events is great, but how to maximize the 
-
 
 
 <br/>
@@ -179,8 +175,10 @@ Give me 6 questions with multiple choices, and their answers
 
 In case the content is suitable for a more "interactive" approach, the following prompt can be very inspirational:
 ```
-Using the attached file, create 7 riddles, in rhymes, and their answers.
+Using the attached presentation, create 7 riddles, in rhymes, and their answers.
 Each riddle starts with a statement, and finishes with a question
+Provide 3 alternative replies, with one of the correct, and the other two wrong.
+Quote the slide the riddle refers to, and the correct reply.
 ```
 
 
@@ -300,6 +298,9 @@ Image generation
 - Deploy stablediffusion via VertexAI (also Imagen)
 - HuggingFace checkpoint to call for getting images
 - Deploy solution to HF so people can visit it
+
+Find the right role
+- You're an head hunter. You need to suggest the best role to contact companies to get sponsorships. What it will be, and why?
 
 
 <br/>
