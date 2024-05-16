@@ -58,9 +58,9 @@ In order to try the different suggestions, a way to access [Gemini mulltimodal](
 
 <br/>
 
-## Introduce the community to the world
+## Describe the community
 
-### Write an intro text to present the community
+### Create a compelling community landing page
 The community landing page is an important showcase to "tell the why and the how" of the community, and attract new members. How to capture its true essence and put it into words? For example, using footage of past community experiences.
 
 After gathering some pictures of past events, access Vertex AI Studio Multimodal, select the "_Gemini 1.5 Pro"_ model, upload the images and prompt:
