@@ -250,7 +250,9 @@ Analyze attendees satisfaction score and groups topics they liked the most
 
 Or something sligtlhy more advanced:
 ```
-How the willingness to suggest the event and satisfaction score are correlated?
+Behave as a data analyst. You are given a CSV file that you need to analyze.
+Take the columns "Would you join another event organized by this community based on your experience?" and "How well did the content of the event meet your expectations?".
+Reasoning step by step, analyze whether there is a correlation between the values in both columns.
 ```
 
 Please note: LLMs sometimes allucinate: try different and specific prompts and verify them. Asking to illustrate data categorisation with quotes from respondents proved to work the best. 
